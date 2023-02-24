@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- NAVBAR -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">RK development</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Domov</a></li>
+                <li><a href="#">Galéria</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">O nás</a></li>
+
+
+
+
+
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+<!-- /NAVBAR -->
+
+
+<!-- MAIN IMAGE -->
+<section class="home">
+</section>
+<!-- /MAIN IMAGE -->
+
+
+        <h2 class="myH2">Hotové projekty</h2>
+
+
+
+
+<!-- CARDS -->
+
+<div class="cards">
+  <!-- CARD 1  -->
+  <div class="card">
+    <img class="card__image" src="fotky_domov/test.jpg" alt="">
+    <div class="card__content">
+
+      <h5 class="card-date-text">Výstavba domov | September 2016</h5>
+      
+      <h3 class="card-building-name">LUX Modranka</h3>
+    
+      <p class="card-text-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tek on the touchline during England’s.
+
+      </p>
+      <p class="card-text-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
+      </p>
+      <p><a href="#" class="read-more-card">Read more</a></p>
+
+ 
+    </div>
+  </div>
+
+  <!-- CARD 2  -->
+  <div class="card">
+    <img class="card__image" src="fotky_domov/test.jpg" alt="">
+    <div class="card__content">
+
+      <h5 class="card-date-text">Výstavba domov | Február 2022</h5>
+      
+      <h3 class="card-building-name">LUX Vlčkovce</h3>
+    
+      <p class="card-text-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tek on the touchline during England’s.
+
+      </p>
+      <p class="card-text-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
+      </p>
+      <p><a href="#" class="read-more-card">Read more</a></p>
+
+ 
+    </div>
+  </div>
+
+  <!-- CARD 3  -->
+  <div class="card">
+    <img class="card__image" src="fotky_domov/test.jpg" alt="">
+    <div class="card__content">
+
+      <h5 class="card-date-text">Výstavba domov | December 2023</h5>
+      
+      <h3 class="card-building-name">LUX Zvončín</h3>
+    
+      <p class="card-text-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tek on the touchline during England’s.
+
+      </p>
+      <p class="card-text-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
+      </p>
+      <p><a href="#" class="read-more-card">Read more</a></p>
+
+ 
+    </div>
+  </div>
+  
+
+   
+      </div>
+
+    
+
+
+
+</div>
+<!-- /CARDS -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>
+  <div class="footer-content">
+    <h3>RK-development</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis?</p>
+    <ul class="socials">
+      <li><a href="www.google.com"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-phone-volume"></i></a></li>
+      <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
+    </ul>
+  </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CARDS -->
+
+
+
+<!-- /STAVBY -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+</body>
+</html>
