@@ -17,6 +17,7 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    z-index: 5;
 }
 
 .nav div.logo {
@@ -74,7 +75,7 @@ body {
 .home {
     width: 100%;
     height: 75vh;
-    background-image:url(fotky_domov/bg-image.jpg);
+    background-image:url(fotky_modranka/bg-image.jpg);
     background-position: center;
 	background-size:cover;
 }
@@ -341,6 +342,55 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+
+}
+
+
+.black-bg-of-text{
+ 
+    position: relative;
+    top: 40%;
+    display: inline-block;
+    
+    padding: 2vw 10vw 3vw 10vw;
+    background-color: rgba(0, 0, 0, 0.65);
+    
+}
+#napis-bg-image{
+
+    font-family: 'Montserrat',sans-serif;
+    font-size:4.7rem;
+    color:white;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+    
+
+    
+}
+#podnadpis-bg-image{
+    font-family: 'Montserrat',sans-serif;
+    font-size:2rem;
+    color:white;
+    margin: 0;
+   
+    
+}
 @keyframes come-up{
     
     from{
@@ -367,124 +417,34 @@ body {
 
 
 
+.gridik{
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;}
+.gridik-item{
+
+    } 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* CARDS */
-
-
-.cards {
-    color: #434343;
-    margin: 0 auto;
-    max-width: 130rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-    grid-auto-rows: auto;
-    gap: 35px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    padding-top: 30px;
-}
-
-
-
-.myH2 {
-	text-align:center;
-	font-weight: 400;
-    font-size:45px;
-    color: #434343;
-    margin-top:125px;
-    margin-bottom: 50px;
-}
-
-
-
-
-.card-date-text{
-    font-weight: 400;
-    font-size: 100%;
-    margin:0;
-    
-}
-.card-building-name{
-    font-weight: 400;
-    font-size: 190%;
-    margin: 15px 0 20px 0;
-    
-}
-
-
-
-.cards * {
-    box-sizing: border-box;
-}
-
-.card__image {
-    width: 100%;
-    height: 45%;
-    object-fit: cover;
-
-    display: block;
-
-   
-}
-
-.card__content {
-    line-height: 1.5;
-    font-size: 1.5em;
-    padding: 20px;
-    padding-left: 0;
-    background: inherit;
-
+.row1-fotka{
+    width:25vw;
+    height:15vw;
 
 }
+.gridik-title-text{
 
-
-
-.card__info {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    font-size: 0.8em;
-    border-bottom: 2px solid #333333;
-    border-right: 2px solid #333333;
-    border-left: 2px solid #333333;
 }
+.gridik-description-text{
 
-.card-text-1{
-    margin-bottom: 0;
-    font-size:18px;
 }
-.card-text-2{
-    margin-bottom: 0;
-    font-size:18px;
-    margin-top:3px;
-    margin-bottom:15px;
-}
+.row2-mapy{
 
-.read-more-card{
-    text-decoration: none;
-    color: #434343;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-bottom:200px;
-}
-.read-more-card:hover{
-    text-decoration: underline;
 }
 
 
@@ -493,17 +453,6 @@ body {
 
 
 
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
 
 
 
@@ -591,58 +540,3 @@ footer h3{
 
 
 }
-
-@media screen and (min-width: 897px) and (max-width: 1301px){
-    /* 2 gridy */
-    .card-text-1, .card-text-2{
-        font-size:16px!important;
-    }
-    
-      }
-    
-    @media screen and (max-width: 896px){
-        /* 1 grid  */
-        .myH2 {
-            font-size:30px!important;
-            margin-top:75px;
-            margin-bottom:30px;
-        }
-    
-    
-        .cards {      
-        max-width: 100rem;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))!important;
-        padding-left: 20px;
-        gap:20px;
-        padding-right: 20px;
-        margin-left:0;
-        margin-right:0;
-        }
-        .card__image {
-            height: 35%  ;
-
-        }
-    
-        .card-date-text{
-            font-weight: 400;
-         
-            margin:0;
-            
-        }
-        .card-building-name{
-            font-weight: 400;
-            font-size: 190%;
-            margin: 10px 0 15px 0;
-            
-        }
-        .card-text-1, .card-text-2{
-            font-size:14px!important;
-        }
-
-    
-    
-    
-    
-    
-    
-        }
