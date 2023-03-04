@@ -466,6 +466,8 @@ pre {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: 500;
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
@@ -7755,13 +7757,18 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  color: #000; }
+  }
 
 .bg-primary {
   background: #e3b04b !important; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 7em 0;
+  
+ }
+ .container{
+  margin-top:50px;
+ }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -7948,7 +7955,7 @@ textarea.form-control {
 
   
 .nav {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
   font-size: 10px;
   width: 100%;
@@ -7957,6 +7964,7 @@ textarea.form-control {
   line-height: 65px;
   text-align: center;
   z-index: 5;
+  font-weight: 300;
 }
 
 .nav div.logo {
@@ -7964,6 +7972,9 @@ textarea.form-control {
   width: auto;
   height: auto;
   padding-left: 1.6rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
 .nav div.logo a {
@@ -8319,7 +8330,7 @@ footer{
   font-weight: 300;
   padding-top:40px;
   color:#fff;
-  margin-top:200px;
+  margin-top:100px;
 
 }
 
