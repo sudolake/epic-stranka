@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
 html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
     font-size: 10px;
     background-color: #ffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -17,7 +19,9 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    z-index: 1;
 }
+
 
 .nav div.logo {
     float: left;
@@ -72,11 +76,13 @@ body {
 /* Home section */
 
 .home {
-    width: 100%;
+    width: 100vw;
     height: 75vh;
     background-image:url(fotky_domov/bg-image.jpg);
     background-position: center;
 	background-size:cover;
+    
+    
 }
 
 .navTrigger {
@@ -104,7 +110,8 @@ body {
         display: block;
     }
     .nav div.logo {
-        margin-left: 15px;
+        margin-left: 0;
+        padding-left:20px;
     }
     .nav div.main_list {
         width: 100%;
@@ -126,14 +133,28 @@ body {
         /*same background color of navbar*/
         background-position: center top;
     }
+    .make-nav-black-when-click{
+        background-color: #111;
+        
+        }
+    .line-under-nav{
+
+        border-bottom: 8px solid #4242422d;
+        z-index: 2;
+
+
+
+
+
+    }
     .nav div.main_list ul li {
         width: 100%;
-        text-align: right;
+        text-align: left;
     }
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 24px;
         padding: 20px;
     }
     .nav div.media_button {
@@ -422,6 +443,7 @@ body {
     font-weight: 400;
     font-size: 190%;
     margin: 15px 0 20px 0;
+    text-align: left;
     
 }
 
@@ -432,7 +454,7 @@ body {
 }
 
 .card__image {
-    width: 100%;
+    width: 100%;     /* KOKOTKOTKOTOKTKOOKTKOTOKTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */  
     height: 45%;
     object-fit: cover;
 
@@ -453,7 +475,7 @@ body {
 
 
 
-.card__info {
+/* .card__info {
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -464,7 +486,7 @@ body {
     border-bottom: 2px solid #333333;
     border-right: 2px solid #333333;
     border-left: 2px solid #333333;
-}
+} */
 
 .card-text-1{
     margin-bottom: 0;
@@ -490,20 +512,253 @@ body {
 
 
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
+#preco-my-title{
+    margin-top:180px;
+    font-size:40px;
+    text-align:center;
+	font-weight: 400;
+    color: #434343;
 
-
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
+    margin-bottom: 50px;
 }
+
+
+.gridik-preco-my {
+    color: #434343;
+    margin: 0 auto;
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.gridik-preco-my * {
+    box-sizing: border-box;
+}
+
+
+
+.fotka-preco-my {
+    width: 100%;
+    height: 22%;
+    object-fit:contain;
+    
+    display: block;
+
+   
+}
+
+.text-preco-my-sekcia {
+    line-height: 1.5;
+    font-size: 2vw;
+    padding: 20px;
+
+    background: inherit;
+
+
+}
+
+
+.text-preco-my{
+    margin-bottom: 0;
+    font-size:18px;
+    text-align:center;
+    margin-top: 7px;
+}
+
+.nazov-preco-my{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+
+
+/* PRECO MY MEDIA */
+@media screen and (max-width: 1057px) and (min-width: 837px){
+    
+
+    
+    .nazov-preco-my{
+        font-weight: 400;
+        font-size: 30px;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+    .text-preco-my{
+        margin-bottom: 0;
+        font-size:16px;
+        text-align:center;
+        margin-top: 7px;
+    }
+    
+    
+    
+}  
+@media screen and (max-width: 837px) and (min-width: 752px){
+        
+        #preco-my-title{
+            margin-top:180px;
+            font-size:35px;
+            
+        }
+        
+        
+        .fotka-preco-my {
+
+            height: 20%;  
+        }
+        
+        
+        
+        
+        
+        .text-preco-my{
+
+            font-size:15px;
+
+        }
+        .nazov-preco-my{
+
+            font-size: 25px;
+
+        }
+        
+}
+@media screen and (max-width: 751px) and (min-width: 694px){
+
+    #preco-my-title{
+        margin-top:180px;
+        font-size:35px;
+        
+    }
+    
+    
+    .fotka-preco-my {
+
+        height: 20%;  
+    }
+    
+    
+    
+    
+    
+    .text-preco-my{
+
+        font-size:12.5px;
+
+    }
+    .nazov-preco-my{
+
+        font-size: 25px;
+
+    }
+    
+}
+@media screen and (max-width: 693px) and (min-width: 0px){
+    .gridik-preco-my {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 55vh;
+        gap: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+       
+    }
+    #preco-my-title{
+       margin-top: 0;
+        font-size:40px; 
+        margin-bottom: 40px;
+    }
+    
+
+    
+    .gridik-preco-my * {
+        box-sizing: border-box;
+    }
+    
+
+    
+
+    
+    
+
+    .nazov-preco-my{
+        margin: 40px 0 0 0;
+    }
+
+
+}
+/* / PRECO MY MEDIA */
+
+
+
+/* PARTNER COROUSEL */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -521,7 +776,7 @@ footer{
     box-sizing: border-box;
     background: #111;
     height:auto;
-    width:99.1vw;
+    width:100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     padding-top:40px;
@@ -592,8 +847,23 @@ footer h3{
 
 }
 
+
+@media screen and (max-width:591px){
+
+    #text-footer{
+        padding-left:30px;
+        padding-right:30px;
+        font-size: 13px;
+    }
+    footer h3{
+        margin-bottom:10px;
+    }
+
+}
+
+
 @media screen and (min-width: 897px) and (max-width: 1301px){
-    /* 2 gridy */
+ 
     .card-text-1, .card-text-2{
         font-size:16px!important;
     }
@@ -601,12 +871,13 @@ footer h3{
       }
     
     @media screen and (max-width: 896px){
-        /* 1 grid  */
+   
         .myH2 {
             font-size:30px!important;
             margin-top:75px;
             margin-bottom:30px;
         }
+
     
     
         .cards {      
@@ -646,3 +917,14 @@ footer h3{
     
     
         }
+
+
+
+
+
+
+
+
+
+
+
