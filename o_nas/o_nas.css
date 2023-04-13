@@ -434,6 +434,7 @@ footer{
 
 footer h3{
     font-weight: 400!important;
+
 }
 
 .footer-content{
@@ -446,7 +447,7 @@ footer h3{
 }
 
 .footer-content h3{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
