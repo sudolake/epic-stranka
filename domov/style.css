@@ -482,11 +482,18 @@ body {
 }
 
 .card__image {
-     width: 100%; 
+    width: 100%; 
     height: 45%;
     object-fit: cover;
 
-    display: block;
+
+    image-rendering:auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+    
 
    
 }
@@ -538,7 +545,7 @@ body {
 }
 
 
-section {
+/* section {
     width: 100%;
     display: inline-block;
     background: #333;
@@ -566,7 +573,274 @@ section {
     margin: 0 0 30px 0;
     letter-spacing: 1px;
     
+} */
+
+
+/* IMPORT */
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+  
+  }
+  
+  
+  .black-bg-of-text{
+   
+      position: relative;
+      top: 40%;
+      display: inline-block;
+      margin:0;
+      padding: 5px 50px 5px 50px;
+      background-color: rgba(0, 0, 0, 0.65);
+      
+  }
+  #napis-bg-image{
+  
+      font-family: 'Montserrat',sans-serif;
+      font-weight: 500;
+      font-size:50px;
+      color:white;
+  
+      letter-spacing: 1px;
+      
+  
+      
+  }
+
+  /* main text responsive */
+  @media screen and (min-width:907px) and (max-width:1057px){
+
+    .black-bg-of-text{
+        top: 35%;
+        padding: 30px 50px 30px 50px;   
+    }
+    #napis-bg-image{
+        font-size:42px;
+        }
+  #podnadpis-bg-image{
+    font-size:17px;   }
+
+    .home {
+        width: 100%;
+        height: 68vh;}
+
+
+
+
 }
+  /*  */
+  
+  @media screen and (min-width:817px) and (max-width:906px){
+
+    .black-bg-of-text{
+        top: 36%;
+        padding: 30px 50px 30px 50px;   
+    }
+    #napis-bg-image{
+        font-size:38px;
+       }
+  #podnadpis-bg-image{
+    font-size:17px;   }
+
+    .home {
+        width: 100%;
+        height: 68vh;}
+
+
+}
+
+@media screen and (min-width:772px) and (max-width:816px){
+
+    .black-bg-of-text{
+        top: 38%;
+        padding: 30px 50px 30px 50px;   
+    }
+    #napis-bg-image{
+        font-size:36px;
+       }
+  #podnadpis-bg-image{
+    font-size:16.5px;   }
+}
+
+@media screen and (min-width:692px) and (max-width:771px){
+
+    .black-bg-of-text{
+        top: 38%;
+        padding: 30px 47px 30px 47px;   
+    }
+    #napis-bg-image{
+        font-size:32px;
+       }
+  #podnadpis-bg-image{
+    font-size:15px;   }
+
+    .home {
+        width: 100%;
+        height: 58vh;}
+
+}
+
+
+@media screen and (min-width:646px) and (max-width:691px){
+
+    .black-bg-of-text{
+        top: 38%;
+        padding: 30px 45px 30px 45px;   
+    }
+    #napis-bg-image{
+        font-size:30px;
+        }
+  #podnadpis-bg-image{
+    font-size:15px;   }
+
+    .home {
+        width: 100%;
+        height: 57vh;}
+
+
+}
+
+
+@media screen and (min-width:558px) and (max-width:645px){
+
+    .black-bg-of-text{
+        top: 39%;
+        padding: 30px 32px 30px 32px;   
+    }
+    #napis-bg-image{
+        font-size:28px;
+       }
+  #podnadpis-bg-image{
+    font-size:14px;   }
+    .home {
+        width: 100%;
+        height: 68vh;}
+}
+
+@media screen and (min-width:513px) and (max-width:577px){
+
+    .black-bg-of-text{
+        top: 39%;
+        padding: 30px 25px 30px 25px;   
+    }
+    #napis-bg-image{
+        font-size:25px;
+      }
+  #podnadpis-bg-image{
+    font-size:14px;   }
+    .home {
+        width: 100%;
+        height: 62vh;}
+}
+
+@media screen and (min-width:495px) and (max-width:512px){
+
+    .black-bg-of-text{
+        top: 39%;
+        padding: 30px 25px 30px 25px;   
+    }
+    #napis-bg-image{
+        font-size:24px;
+}
+  #podnadpis-bg-image{
+    font-size:13px;   }
+    .home {
+        width: 100%;
+        height: 53vh;}
+}
+
+
+@media screen and (min-width:436px) and (max-width:494px){
+
+    .black-bg-of-text{
+        top: 39%;
+        padding: 30px 25px 30px 25px;   
+    }
+    #napis-bg-image{
+        font-size:21px;
+}
+  #podnadpis-bg-image{
+    font-size:12px;   }
+    .home {
+        width: 100%;
+        height: 50vh;}
+}
+
+@media screen and (min-width:380px) and (max-width:435px){
+
+    .black-bg-of-text{
+        top: 41%;
+        padding: 30px 20px 30px 20px;   
+    }
+    #napis-bg-image{
+        font-size:19px;
+}
+  #podnadpis-bg-image{
+    font-size:11px;   }
+    .home {
+        width: 100%;
+        height: 47vh;}
+}
+
+
+@media screen and (min-width:332px) and (max-width:379px){
+
+    .black-bg-of-text{
+        top: 41%;
+        padding: 30px 12px 30px 12px;   
+    }
+    #napis-bg-image{
+        font-size:17px;
+}
+  #podnadpis-bg-image{
+    font-size:10px;   }
+    .home {
+        width: 100%;
+        height: 45vh;}
+
+
+        .nav div.logo a {
+
+            font-size: 2rem;
+        }
+}
+
+
+@media screen and (min-width:1px) and (max-width:331px){
+
+    .black-bg-of-text{
+        top: 41%;
+        padding: 30px 5px 30px 5px;   
+    }
+    #napis-bg-image{
+        font-size:14px;
+  }
+  #podnadpis-bg-image{
+    font-size:8px;   }
+    .home {
+        width: 100%;
+        height: 45vh;}
+        .nav div.logo a {
+
+            font-size: 2rem;
+        }
+}
+
+
+/* IMPORT */
+
+
+
+
+
+
+
+
+
+
 
 .button_container {
     position: absolute;

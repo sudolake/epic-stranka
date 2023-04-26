@@ -1,0 +1,154 @@
+
+/* CARDS */
+
+
+.VLUX-cards {
+    color: #434343;
+    margin: 0 auto;
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-auto-rows: auto;
+    gap: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+.VLUX-date-text{
+    font-weight: 400;
+    font-size: 100%;
+    margin:0;
+    
+}
+.VLUX-title{
+    font-weight: 400;
+    font-size: 190%;
+    margin: 15px 0 0px 0;
+    text-align: left;
+    
+}
+.VLUX-hr{
+    margin-bottom:10px;
+    
+}
+.VLUX-hr-text{
+    font-weight: 400;
+    font-size: 110%;
+
+}
+
+
+
+
+.VLUX-cards * {
+    box-sizing: border-box;
+}
+
+.VLUX-card {
+    width: 100%; 
+    height: 45%;
+    object-fit: cover;
+
+
+    image-rendering:auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+    
+
+   
+}
+
+.VLUX-content {
+    line-height: 1.5;
+    font-size: 1.5em;
+    padding: 20px;
+    padding-left: 0;
+    background: inherit;
+
+
+}
+
+
+
+
+.VLUX-text-1{
+    margin-bottom: 0;
+    font-size:18px;
+}
+
+.VLUX-read-more{
+    text-decoration: none;
+    color: #434343;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:200px;
+}
+.VLUX-read-more:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 897px) and (max-width: 1301px){
+ 
+    .VLUX-text-1{
+        font-size:16px!important;
+    }
+    
+      }
+    
+    @media screen and (max-width: 896px){
+   
+        .VLUX-cards {      
+        max-width: 100rem;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))!important;
+        padding-left: 20px;
+        gap:20px;
+        padding-right: 20px;
+        margin-left:0;
+        margin-right:0;
+        }
+        
+
+        .VLUX-date-text{
+            font-weight: 400;
+         
+            margin:0;
+            
+        }
+        .VLUX-title{
+            font-weight: 400;
+            font-size: 190%;
+            margin: 10px 0 15px 0;
+            
+        }
+        .VLUX-text-1{
+            font-size:14px!important;
+        }
+
+    
+    
+    
+    
+    
+    
+        }
+
+
+
+
+
+
+
+
+
+
+
