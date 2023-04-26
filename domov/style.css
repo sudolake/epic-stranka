@@ -435,6 +435,10 @@ body {
     margin-bottom: 50px;
 }
 
+.na-predaj{
+    margin-top:100px;
+}
+
 
 
 
@@ -594,7 +598,7 @@ section {
       display: inline-block;
       margin:0;
       padding: 5px 50px 5px 50px;
-      background-color: rgba(0, 0, 0, 0.65);
+      background-color: rgba(0, 0, 0, 0.75);
       
   }
   #napis-bg-image{
@@ -757,7 +761,7 @@ section {
 
     .black-bg-of-text{
         top: 39%;
-        padding: 30px 25px 30px 25px;   
+        padding: 30px 10px 30px 10px;   
     }
     #napis-bg-image{
         font-size:21px;
@@ -773,7 +777,7 @@ section {
 
     .black-bg-of-text{
         top: 41%;
-        padding: 30px 20px 30px 20px;   
+        padding: 30px 0px 30px 0px;   
     }
     #napis-bg-image{
         font-size:19px;
@@ -790,7 +794,7 @@ section {
 
     .black-bg-of-text{
         top: 41%;
-        padding: 30px 12px 30px 12px;   
+        padding: 30px 5px 30px 5px;  
     }
     #napis-bg-image{
         font-size:17px;
@@ -875,10 +879,11 @@ section {
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.15);
+    font-size: 17px;
+    background: rgba(255, 255, 255, 0.6);
     padding: 17px 60px;
-    margin: 0 auto;
+    margin:auto;
+    margin-top:20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
   
@@ -886,7 +891,7 @@ section {
     position: relative; 
     z-index: 1;
     opacity: 100%!important;
-    color:white;
+    color:#222222;
     font-family: 'Montserrat',sans-serif;
   }
   
@@ -945,7 +950,7 @@ section {
     }
 
     .btn {
-
+        margin-top:30px;
         font-size: 13px;
         padding: 15px 48px;
       }
@@ -1398,6 +1403,9 @@ footer h3{
             font-size:30px!important;
             margin-top:75px;
             margin-bottom:30px;
+        }
+        .na-predaj{
+            margin-top:55px;
         }
 
     
