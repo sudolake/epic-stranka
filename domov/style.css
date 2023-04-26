@@ -24,6 +24,7 @@ body {
     
     
   }
+  
 
   
   .nav > .nav-header {
@@ -71,6 +72,14 @@ body {
     padding-top:40px;
   }
   
+  .nav-phone{
+    text-decoration: none;
+    color:rgb(179, 179, 179)!important;
+    font-size:20px;
+    position: absolute;
+    padding-top:40px!important;
+    right:400px;
+  }
   @media (max-width:830px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -111,6 +120,7 @@ body {
       width: 100%;
       padding: 13px 10px 13px 10px;
     }
+    
 
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -130,7 +140,45 @@ body {
       }
   }
 
+  .collapsed-phone{
+    display: none;
+  }
+@media screen and (min-width:894px) and (max-width:947px){
+  .nav-phone{
+    font-size:15px;
+    padding-top:44px!important;
+    right:390px;
+  }}
 
+  @media screen and (min-width:875px) and (max-width:893px){
+    .nav-phone{
+      font-size:15px;
+      padding-top:44px!important;
+      right:375px;
+    }}
+    @media screen and (min-width:831px) and (max-width:874px){
+        .nav-phone{
+          font-size:13px;
+          padding-top:75px!important;
+          left:105px;
+        }}
+
+        @media screen and (min-width:1px) and (max-width:830px){
+
+            .nav-phone{
+                display: none;
+              }
+            .collapsed-phone{
+                    display: inline;
+                    text-decoration: none;
+                    color:rgb(179, 179, 179)!important;
+                    font-size:16px;
+                    position: absolute;
+                    padding-top:20px!important;
+                    left:115px;
+                  }}
+            
+        
 
 
 /* Home section */
