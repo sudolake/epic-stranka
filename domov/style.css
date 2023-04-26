@@ -14,68 +14,123 @@ body {
 
 
 .nav {
+    height: 100px;
     width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
-    z-index: 3;
+    background-color: #111111;
+    position: relative;
+    z-index: 5;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-}
+    
+    
+  }
 
-
-.nav div.logo {
-
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 2.5rem;
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-}
-
-.nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color:darkgray;
-}
-
-.nav div.main_list {
-    height: 65px;
+    
+    vertical-align:middle;
+    
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
     float: right;
-}
-
-.nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
-.nav div.main_list ul li a {
+    font-size: 22px;
+    vertical-align:middle;
+    
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 37px 10px 13px 10px;
     text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
-}
+    color: #efefef;
+    vertical-align: middle;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: #111111;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+    padding-top:40px;
+  }
+  
+  @media (max-width:830px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      box-shadow: 0;
+      
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      padding-top:40px;
+    }
 
-.nav div.main_list ul li a:hover {
-    color: darkgray;
-}
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #111111;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 100px;
+
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      padding: 13px 10px 13px 10px;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  @media screen and (min-width:1px) and (max-width:850px){
+    .nav > .nav-header > .nav-title {
+
+        font-size: 25px;
+
+        
+      }
+  }
+
+
 
 
 /* Home section */
@@ -90,293 +145,6 @@ body {
     
 }
 
-.navTrigger {
-    display: none;
-}
-
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-
-/* Media qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .navTrigger {
-        display: block;
-    }
-    .nav div.logo {
-        margin-left: 0;
-        padding-left:20px;
-    }
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .make-nav-black-when-click{
-        background-color: #111;
-        
-        }
-    .line-under-nav{
-
-        border-bottom: 8px solid #4242422d;
-        z-index: 2;
-
-
-
-
-
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: left;
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 24px;
-        padding: 20px;
-    }
-    .nav div.media_button {
-        display: block;
-    }
-}
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
-}
-
-.navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-}
-
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
-}
-
-.navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
-}
-
-@-webkit-keyframes inM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes inM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes outM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
-}
-
-@keyframes outM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@-webkit-keyframes inT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes inT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@keyframes outT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes inBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes inBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@-webkit-keyframes outBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-@keyframes outBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
-}
-
-.affix {
-    padding: 0;
-    background-color: #111;
-}
-
-
-
-@keyframes come-up{
-    
-    from{
-        transform: translateY(300px);
-    }
-
-    to{
-        transform: translateY(0);
-}
-}
 
 .animation-come-up{
 
@@ -683,7 +451,7 @@ section {
 
     .home {
         width: 100%;
-        height: 58vh;}
+        height: 80vh;}
 
 }
 
@@ -702,7 +470,7 @@ section {
 
     .home {
         width: 100%;
-        height: 57vh;}
+        height: 80vh;}
 
 
 }
@@ -721,13 +489,13 @@ section {
     font-size:14px;   }
     .home {
         width: 100%;
-        height: 68vh;}
+        height: 80vh;}
 }
 
 @media screen and (min-width:513px) and (max-width:577px){
 
     .black-bg-of-text{
-        top: 39%;
+        top: 25%;
         padding: 30px 25px 30px 25px;   
     }
     #napis-bg-image{
@@ -737,13 +505,13 @@ section {
     font-size:14px;   }
     .home {
         width: 100%;
-        height: 62vh;}
+        height: 72vh;}
 }
 
 @media screen and (min-width:495px) and (max-width:512px){
 
     .black-bg-of-text{
-        top: 39%;
+        top: 25%;
         padding: 30px 25px 30px 25px;   
     }
     #napis-bg-image{
@@ -753,14 +521,14 @@ section {
     font-size:13px;   }
     .home {
         width: 100%;
-        height: 53vh;}
+        height: 70vh;}
 }
 
 
 @media screen and (min-width:436px) and (max-width:494px){
 
     .black-bg-of-text{
-        top: 39%;
+        top: 25%;
         padding: 30px 10px 30px 10px;   
     }
     #napis-bg-image{
@@ -770,13 +538,13 @@ section {
     font-size:12px;   }
     .home {
         width: 100%;
-        height: 50vh;}
+        height: 70vh;}
 }
 
 @media screen and (min-width:380px) and (max-width:435px){
 
     .black-bg-of-text{
-        top: 41%;
+        top: 20%;
         padding: 30px 0px 30px 0px;   
     }
     #napis-bg-image{
@@ -786,14 +554,14 @@ section {
     font-size:11px;   }
     .home {
         width: 100%;
-        height: 47vh;}
+        height: 60vh;}
 }
 
 
 @media screen and (min-width:332px) and (max-width:379px){
 
     .black-bg-of-text{
-        top: 41%;
+        top: 20%;
         padding: 30px 5px 30px 5px;  
     }
     #napis-bg-image{
@@ -803,7 +571,7 @@ section {
     font-size:10px;   }
     .home {
         width: 100%;
-        height: 45vh;}
+        height: 70vh;}
 
 
         .nav div.logo a {
@@ -816,7 +584,7 @@ section {
 @media screen and (min-width:1px) and (max-width:331px){
 
     .black-bg-of-text{
-        top: 41%;
+        top: 20%;
         padding: 30px 5px 30px 5px;   
     }
     #napis-bg-image{
@@ -826,7 +594,7 @@ section {
     font-size:8px;   }
     .home {
         width: 100%;
-        height: 45vh;}
+        height: 70vh;}
         .nav div.logo a {
 
             font-size: 2rem;
@@ -1447,6 +1215,167 @@ footer h3{
 
 
 
+
+
+
+
+
+
+
+
+
+/* CARDS */
+
+
+.VLUX-cards {
+    color: #434343;
+    margin: 0 auto;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+.VLUX-date-text{
+    font-weight: 400;
+    font-size: 100%;
+    margin:0;
+    
+}
+.VLUX-title{
+    font-weight: 400;
+    font-size: 190%;
+    margin: 15px 0 0px 0;
+    text-align: left;
+    
+}
+.VLUX-hr{
+    margin-bottom:10px;
+    
+}
+.VLUX-hr-text{
+    font-weight: 400;
+    font-size: 110%;
+
+}
+
+
+
+
+.VLUX-cards * {
+    box-sizing: border-box;
+}
+
+.VLUX-card {
+    width: 100%; 
+    text-align: center;
+    object-fit: cover;
+
+
+    image-rendering:auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+    
+
+   
+}
+
+.VLUX-content {
+    line-height: 1.5;
+    font-size: 1.5em;
+    padding: 20px;
+    padding-left: 0;
+    background: inherit;
+
+
+}
+
+
+
+
+.VLUX-text-1{
+    margin-bottom: 0;
+    font-size:18px;
+}
+
+.VLUX-read-more{
+    text-decoration: none;
+    color: #434343;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:200px;
+}
+.VLUX-read-more:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 897px) and (max-width: 1301px){
+ 
+    .VLUX-text-1{
+        font-size:16px!important;
+    }
+    
+      }
+    
+    @media screen and (max-width: 896px){
+   
+
+
+        
+
+        .VLUX-date-text{
+            font-weight: 400;
+         
+            margin:0;
+            
+        }
+        .VLUX-title{
+            font-weight: 400;
+            font-size: 190%;
+            margin: 10px 0 15px 0;
+            
+        }
+        .VLUX-text-1{
+            font-size:14px!important;
+        }
+
+    
+    
+    
+    
+    
+    
+        }
+
+
+
+
+@media screen and (min-width:860px) and (max-width:1324px){
+    .VLUX-cards {
+        width: 60vw;
+    }
+}
+@media screen and (min-width:559px) and (max-width:859px){
+    .VLUX-cards {
+        width: 80vw;
+    }
+}
+@media screen and (min-width:1px) and (max-width:558px){
+    .VLUX-cards {
+        width: 90vw;
+    }
+}
 
 
 
