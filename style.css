@@ -80,6 +80,9 @@ body {
     padding-top:40px!important;
     right:400px;
   }
+.nav-title-text{
+  text-decoration: none;color:white}
+
   @media (max-width:830px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -177,6 +180,43 @@ body {
                     padding-top:20px!important;
                     left:115px;
                   }}
+
+    @media screen and (min-width:381px) and (max-width:420px){
+
+    .nav-title-text{
+        font-size:23px;
+        
+        
+        
+        
+    }}
+    @media screen and (min-width:371px) and (max-width:380px){
+
+        .nav-title-text{
+            font-size:20px;
+            
+        }
+        }
+
+
+
+
+
+
+@media screen and (min-width:1px) and (max-width:370px){
+
+    .nav-title-text{
+        display:none
+        
+    }
+    .collapsed-phone{
+        display:none
+    }
+
+
+
+
+}
             
         
 
