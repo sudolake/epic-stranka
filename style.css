@@ -296,7 +296,9 @@ body {
 }
 
 
-
+#Lucna-margin{
+    margin-bottom: 100px;
+}
 
 .card-date-text{
     font-weight: 400;
