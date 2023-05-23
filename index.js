@@ -9,4 +9,17 @@ $('.navTrigger').click(function () {
 });
 
 
+$('.bodky-skusenosti').click(function () {
+    $(".expandable-text-skusenosti").toggleClass('visible-text');
+    $(this).toggleClass('hidden-text');
+});
 
+$('.bodky-historia').click(function () {
+    $(".expandable-text-historia").toggleClass('visible-text');
+    $(this).toggleClass('hidden-text');
+});
+
+$('.bodky-lucna').click(function () {
+    $(".expandable-text-lucna").toggleClass('visible-text');
+    $(this).toggleClass('hidden-text');
+});

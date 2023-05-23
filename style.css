@@ -1146,6 +1146,19 @@ margin-top:0;
 
 
 
+.hidden-text{
+    display: none;
+}
+.visible-text{
+    display: inline;
+}
+
+
+
+
+
+
+
 
 
 
