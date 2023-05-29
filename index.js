@@ -23,3 +23,7 @@ $('.bodky-lucna').click(function () {
     $(".expandable-text-lucna").toggleClass('visible-text');
     $(this).toggleClass('hidden-text');
 });
+$('.read-more-lucna').click(function () {
+    $(".expandable-text-lucna").toggleClass('visible-text');
+    $(".bodky-lucna").toggleClass('hidden-text');
+});

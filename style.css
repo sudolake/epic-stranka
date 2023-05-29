@@ -33,11 +33,10 @@ body {
   
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 30px;
+    font-size: 32px;
     color: #fff;
     padding: 10px 10px 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Noto Sans Chorasmian', sans-serif;
     
     vertical-align:middle;
     
@@ -1153,17 +1152,20 @@ margin-top:0;
     display: inline;
 }
 
+.bodky-skusenosti:hover, .bodky-historia:hover, .bodky-lucna:hover, .read-more-lucna:hover{
+cursor: pointer;
+}
 
 
 
 
+.link-na-realizacie{
+    color:black
+}
 
-
-
-
-
-
-
+.invis{
+    visibility: hidden;
+}
 
 /* foter */
 
@@ -1185,6 +1187,7 @@ footer{
 
 footer h3{
     font-weight: 400!important;
+    
 }
 
 .footer-content{
