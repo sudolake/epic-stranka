@@ -1047,11 +1047,15 @@ section {
     .gridik-preco-my {
         grid-template-columns: 1fr;
         grid-auto-rows: 55vh;
-        gap: 0px;
+        gap: 10px;
         padding-left: 15px;
         padding-right: 15px;
        
     }
+    .clicked-skusenosti-grid-change{
+        gap: 200px!important;
+    }
+
     #preco-my-title{
        margin-top: 0;
         font-size:40px; 
@@ -1157,7 +1161,9 @@ cursor: pointer;
 }
 
 
-
+.more-margin{
+    margin-top:300px;
+}
 
 .link-na-realizacie{
     color:black

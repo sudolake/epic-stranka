@@ -12,11 +12,16 @@ $('.navTrigger').click(function () {
 $('.bodky-skusenosti').click(function () {
     $(".expandable-text-skusenosti").toggleClass('visible-text');
     $(this).toggleClass('hidden-text');
+    $(".gridik-preco-my").toggleClass('clicked-skusenosti-grid-change');
+    
+
+
 });
 
 $('.bodky-historia').click(function () {
     $(".expandable-text-historia").toggleClass('visible-text');
     $(this).toggleClass('hidden-text');
+    $(".partneri-napis").toggleClass('more-margin');
 });
 
 $('.bodky-lucna').click(function () {
